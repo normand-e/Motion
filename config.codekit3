@@ -256,12 +256,6 @@
       "pg" : 0,
       "sct" : 0
     },
-    "\/node_modules" : {
-      "ft" : 65536,
-      "oA" : 2,
-      "oAP" : "\/node_modules",
-      "oF" : 0
-    },
     "\/package-lock.json" : {
       "ft" : 524288,
       "oA" : 1,
@@ -306,7 +300,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 669227926.75338697,
-    "displayValue" : "starter",
+    "displayValue" : "Motion",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-ucla",
     "iconImageWasSetByUser" : 0
