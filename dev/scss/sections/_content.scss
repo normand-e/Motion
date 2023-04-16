@@ -6,21 +6,30 @@
     ". cta .";
     padding: 64px 0;
 
-    @include md{
-        padding: 100px 0;
-        grid-template-columns: auto 80% auto;
-    }
-    @include md{
-        padding: 128px 0;
-        grid-template-columns: auto 80% auto;
-    }
-    @include md{
-        grid-template-columns: auto 1440px auto;
-    }
+    // @include sm{
+    //     padding: 100px 0;
+    //     grid-template-columns: auto 80% auto
+    //     auto 80% auto;
+    // }
+    // @include md{
+    //     padding: 128px 0;
+    //     grid-template-columns: auto 80% auto
+    //     auto 80% auto;
+    // }
+    // @include lg{
+    //     grid-template-columns: auto 1440px auto
+    //     auto 1440px auto;
+    // }
 
     #headText{
-        grid-area: content;
+        grid-area: heading;
 
+        @include sm{
+            padding: 0 5%;
+        }
+        @include md{
+            padding: 0 10%;
+        }
         @include lg{
             padding:0 30%;
 
@@ -38,5 +47,16 @@
     }
     #cta{
         grid-area: cta;
+        align-content: center;
+        @include sm{
+            padding: 0 5%;
+        }
+        @include md{
+            padding: 0 10%;
+        }
+        @include lg{
+            padding:0 30%;
+
+        }
     }
 }

@@ -369,6 +369,7 @@ template {
   border: none;
   background-color: #a83252;
   text-decoration: none;
+  border-radius: 16px;
   color: #ffffff;
   padding: 16px 16px;
   cursor: pointer;
@@ -518,25 +519,18 @@ header > div aside a {
   grid-template-areas: ". heading ." ". cta .";
   padding: 64px 0;
 }
-@media (min-width: 768px) {
-  #content {
-    padding: 100px 0;
-    grid-template-columns: auto 80% auto;
-  }
-}
-@media (min-width: 768px) {
-  #content {
-    padding: 128px 0;
-    grid-template-columns: auto 80% auto;
-  }
-}
-@media (min-width: 768px) {
-  #content {
-    grid-template-columns: auto 1440px auto;
-  }
-}
 #content #headText {
-  grid-area: content;
+  grid-area: heading;
+}
+@media (min-width: 576px) {
+  #content #headText {
+    padding: 0 5%;
+  }
+}
+@media (min-width: 768px) {
+  #content #headText {
+    padding: 0 10%;
+  }
 }
 @media (min-width: 1024px) {
   #content #headText {
@@ -554,4 +548,20 @@ header > div aside a {
 }
 #content #cta {
   grid-area: cta;
+  align-content: center;
+}
+@media (min-width: 576px) {
+  #content #cta {
+    padding: 0 5%;
+  }
+}
+@media (min-width: 768px) {
+  #content #cta {
+    padding: 0 10%;
+  }
+}
+@media (min-width: 1024px) {
+  #content #cta {
+    padding: 0 30%;
+  }
 }
