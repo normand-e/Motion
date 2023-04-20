@@ -1,7 +1,8 @@
 #hero{
+    font-family: 'Montserrat', sans-serif;
     height: 90vh;
     width:100%;
-    
+
 
     @include xl{
         display:grid;
@@ -28,8 +29,10 @@
         background-position: center;
         background-size: cover;
 
+
         #hero-content{
-            color:var(--white);;
+
+            color:var(--white);
             text-align: center;
 
             h1{
