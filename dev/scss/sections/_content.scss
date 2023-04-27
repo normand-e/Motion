@@ -1,0 +1,63 @@
+#content{
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-columns: auto 90% auto;
+    grid-template-areas: 
+    ". heading ."
+    ". cta .";
+    padding: 64px 0;
+
+    // @include sm{
+    //     padding: 100px 0;
+    //     grid-template-columns: auto 80% auto
+    //     auto 80% auto;
+    // }
+    // @include md{
+    //     padding: 128px 0;
+    //     grid-template-columns: auto 80% auto
+    //     auto 80% auto;
+    // }
+    // @include lg{
+    //     grid-template-columns: auto 1440px auto
+    //     auto 1440px auto;
+    // }
+
+    #headText{
+        grid-area: heading;
+
+        @include sm{
+            padding: 0 5%;
+        }
+        @include md{
+            padding: 0 10%;
+        }
+        @include lg{
+            padding:0 30%;
+
+        }
+
+        h1{
+            font-size: rem-calc(35);
+            margin-bottom: 10px;
+        }
+        p{
+            font-size: rem-calc(18);
+            line-height: rem-calc(30);
+            text-align: justify;
+        }
+    }
+    #cta{
+        grid-area: cta;
+        align-content: center;
+        @include sm{
+            padding: 0 5%;
+        }
+        @include md{
+            padding: 0 10%;
+        }
+        @include lg{
+            padding:0 30%;
+
+        }
+    }
+}
