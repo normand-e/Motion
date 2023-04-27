@@ -1,10 +1,22 @@
 import {gsap} from "gsap";
 
-gsap.from("#logo", {duration:1, alpha:0, delay:.25, x:"+=1000"});
-gsap.from("nav li", {duraton:3, stagger:0.2, y:"-=100", delay:.5, ease:"slow(0.7, 0.7, false)"});
-gsap.from("#heroHead", {duration:1, delay:.5, y:1000, x:"-=1000", rotation:720, scale:15});
-gsap.from("#heroSub", {duration:3, y:1000, x:2000, rotation:-720, ease: "elastic.inOut(1, 0.3)"});
-gsap.from(".cta", {duration:1, alpha:0, y:1000, rotation:1800, delay:1.5});
-gsap.from("#contentH1", {duration:2, x:1000, ease:"bounce.inOut"});
-gsap.from("p", {duration:2, x:-1000, ease:"bounce.out"});
-gsap.from("article", {duration:1, alpha:.5});
+
+let mainTL = gsap.timeline({delay:1});
+
+
+mainTL.from("#logo", {duration:.5, alpha:0, delay:.5, x:"+=1000"})
+.from("nav li", {duraton:.5, stagger:0.2, y:"-=100", ease:"slow(0.7, 0.7, false)"},0)
+.from("#heroHead", {duration:.75, y:1000, x:"-=1000", rotation:720, scale:15})
+.from("#heroSub", {duration:.75, y:1000, x:2000, rotation:-720, ease: "elastic.inOut(1, 0.3)"}, "-=.25")
+//.from("article", {duration:.5, alpha:.5}, "<")
+.from(".cta", {duration:.5, alpha:0, y:1000, rotation:1800})
+.from("#contentH1", {duration:1, x:1000, ease:"bounce.inOut"})
+.from("p", {duration:1, x:-1000, ease:"bounce.out"})
+
+
+;
+
+function(navAni){
+    let tl = gsap.timeline();
+    tl.
+}
