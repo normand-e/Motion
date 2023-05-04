@@ -1,7 +1,51 @@
 #section-3 {
-	background-color: var(--yellow);
+	margin-top: auto;
+	background-color: var(--green);
 	height: 100vh;
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	display: grid;
+	grid-template-columns: auto 18% 18% 18% 18% 18% auto;
+	grid-template-areas: ". pic1 pic2 pic3 pic4 pic5 ."
+	". pic6 pic7 pic8 pic9 pic10 .";
+
+	#p1{
+		grid-area: pic8;
+		background-size: cover;
+	
+	}
+	#p2{
+		grid-area: pic10;
+	}
+	#p3{
+		grid-area: pic5;
+		margin-top: auto;
+	}
+	#p4{
+		grid-area: pic1;
+		background-size: cover;
+		margin-top: auto;
+		
+	}
+	#p5{
+		grid-area: pic2;
+		margin-top: auto;
+	}
+	#p6{
+		grid-area: pic7;
+	}
+	#p7{
+		grid-area: pic6;
+	}
+	#p8{
+		grid-area: pic4;
+		margin-top: auto;
+	}
+	#p9{
+		grid-area: pic9;
+	}
+	#p10{
+		grid-area: pic3;
+		margin-top: auto;
+	}
+
+
 }
