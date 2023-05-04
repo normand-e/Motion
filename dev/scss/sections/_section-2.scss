@@ -4,14 +4,17 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url("../img/film.jpg");
+    background-size: 110%;
 
     #albums{
         display: flex;
         justify-content: center;
         align-items: center-top;
+        ul{
+            margin-left: 36px;
+        }
     }
-    ul{
-        margin-left: 36px;
-    }
+    
 
 }

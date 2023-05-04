@@ -21,6 +21,27 @@
       "oF" : 0,
       "pg" : 0
     },
+    "\/deploy\/img\/film_tmp1531398379" : {
+      "cB" : 0,
+      "ft" : 8192,
+      "hM" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/film_tmp1531398379",
+      "oF" : 0
+    },
+    "\/deploy\/img\/film.jpg" : {
+      "ft" : 16384,
+      "iS" : 147766,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/film.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
     "\/deploy\/img\/hero.jpg" : {
       "ft" : 16384,
       "iS" : 129853,

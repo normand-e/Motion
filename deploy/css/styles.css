@@ -349,6 +349,7 @@ h1 {
 ============= */
 body {
   font-family: "Courier Prime", monospace;
+  color: var(--back);
 }
 
 /* =============
@@ -382,7 +383,6 @@ textarea {
     Footer
 ============= */
 #section-1 {
-  color: var(--back);
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -391,7 +391,7 @@ textarea {
   background-size: cover;
 }
 #section-1 > h1 {
-  padding-top: 26px;
+  padding-top: 36px;
 }
 
 #section-2 {
@@ -400,13 +400,15 @@ textarea {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-image: url("../img/film.jpg");
+  background-size: 110%;
 }
 #section-2 #albums {
   display: flex;
   justify-content: center;
   align-items: center-top;
 }
-#section-2 ul {
+#section-2 #albums ul {
   margin-left: 36px;
 }
 

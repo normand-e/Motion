@@ -1,14 +1,15 @@
 #section-1{
-    color: var(--back);
+
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center-top;
     background-image: url("../img/hero.jpg");
     background-size: cover;
+    
 
     
     >h1{
-        padding-top: 26px;
+        padding-top: 36px;
     }
 }
