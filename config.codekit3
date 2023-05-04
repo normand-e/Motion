@@ -140,13 +140,26 @@
     },
     "\/deploy\/img\/10.png" : {
       "ft" : 32768,
-      "iS" : 0,
+      "iS" : 29972,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/10.png",
       "oF" : 0,
       "oIPL" : 1,
       "opt" : 1,
       "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 100,
+      "rq" : 75
+    },
+    "\/deploy\/img\/distress.jpg" : {
+      "ft" : 16384,
+      "iS" : 98045,
+      "jF" : 0,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/distress.jpg",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75

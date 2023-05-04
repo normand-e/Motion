@@ -413,12 +413,40 @@ textarea {
 }
 
 #section-3 {
-  margin-top: auto;
-  background-color: var(--green);
   height: 100vh;
   display: grid;
   grid-template-columns: auto 18% 18% 18% 18% 18% auto;
   grid-template-areas: ". pic1 pic2 pic3 pic4 pic5 ." ". pic6 pic7 pic8 pic9 pic10 .";
+  background-image: url("../img/distress.jpg");
+  background-size: cover;
+}
+#section-3 img {
+  height: 85px;
+  width: 85px;
+}
+@media (min-width: 768px) {
+  #section-3 img {
+    height: 130px;
+    width: 130px;
+  }
+}
+@media (min-width: 1024px) {
+  #section-3 img {
+    height: 150px;
+    width: 150px;
+  }
+}
+@media (min-width: 1200px) {
+  #section-3 img {
+    height: 200px;
+    width: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  #section-3 img {
+    height: 250px;
+    width: 250px;
+  }
 }
 #section-3 #p1 {
   grid-area: pic8;

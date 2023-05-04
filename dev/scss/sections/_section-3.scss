@@ -1,15 +1,37 @@
 #section-3 {
-	margin-top: auto;
-	background-color: var(--green);
 	height: 100vh;
 	display: grid;
 	grid-template-columns: auto 18% 18% 18% 18% 18% auto;
 	grid-template-areas: ". pic1 pic2 pic3 pic4 pic5 ."
 	". pic6 pic7 pic8 pic9 pic10 .";
+	background-image: url("../img/distress.jpg");
+    background-size: cover;
+
+	img{
+		height: 85px;
+		width: 85px;
+		@include md {
+			height: 130px;
+			width: 130px;
+		}
+		@include lg {
+			height: 150px;
+			width: 150px;
+		}
+		@include xl {
+			height: 200px;
+			width: 200px;
+		}
+		@include xxl {
+			height: 250px;
+			width: 250px;
+		}
+	}
 
 	#p1{
 		grid-area: pic8;
 		background-size: cover;
+
 	
 	}
 	#p2{
@@ -23,6 +45,7 @@
 		grid-area: pic1;
 		background-size: cover;
 		margin-top: auto;
+		
 		
 	}
 	#p5{
