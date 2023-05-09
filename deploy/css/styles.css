@@ -389,6 +389,7 @@ textarea {
   align-items: center-top;
   background-image: url("../img/hero.jpg");
   background-size: cover;
+  background-position: center top;
 }
 #section-1 > h1 {
   padding-top: 36px;
@@ -402,8 +403,12 @@ textarea {
   align-items: center;
   background-image: url("../img/film.jpg");
   background-size: 110%;
+  display: grid;
+  grid-template-columns: auto 80% auto;
+  grid-template-areas: ". albums .";
 }
 #section-2 #albums {
+  grid-area: albums;
   display: flex;
   justify-content: center;
   align-items: center-top;
