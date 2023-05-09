@@ -16,8 +16,8 @@ function studioAnimation(){
     let tl = gsap.timeline({
         scrollTrigger:{
             trigger:"#studio-list",
-            start:"center 90%",
-            end:"center 20%",
+            start:"top 70%",
+            end:"top 25%",
             scrub:true,
             markers:true
         }});
