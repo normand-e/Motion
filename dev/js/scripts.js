@@ -3,26 +3,39 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 gsap.registerPlugin(ScrollTrigger);
 
+function headText(){
+    let tl = gsap.timeline();
+    tl.from("#alanis-hero", {duration:2, alpha:0, y:200, ease:"back.out(2)"});
 
+    return tl;
+}
 
 function heroAnimation(){
-    let tl = gsap.timeline();
+    let tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:"#section-1",
+            start:"bottom bottom",
+            scrub:true,
+            markers:true,
+            toggleActions: "play none none none"
+        }});
     
-    tl.from("#alanis-hero", {duration:2, alpha:0, y:200, ease:"back.out(2)"});
+    tl.to("#section-1", {duration:5, alpha:.75});
+    
     return tl;
 }
 
 function studioAnimation(){
     let tl = gsap.timeline({
         scrollTrigger:{
-            trigger:"#studio-list",
+            trigger:"#section-2",
             start:"top 70%",
-            end:"top 25%",
+            end:"80% 80%",
             scrub:true,
-            markers:true
+            markers:false
         }});
-    //tl.from("#albums", {duration:1.5, scale:.25}, "alb");
-   tl.from("#studio-list", {duration:3, alpha:0, x:1000, ease:"power4.out"}, "alb");
+    tl.from("#albums", { scale:.25}, "alb");
+    tl.from("#studio-list", { alpha:0, x:1000, ease:"power4.out"});
     //tl.from("#studio-label", {duration:1.5, alpha:0, y:100, ease:"power3.out"}, "-=1");
     
     return tl;
@@ -31,6 +44,7 @@ function studioAnimation(){
 
 
 let mainTl = gsap.timeline();
-mainTl.add(heroAnimation())
+mainTl.add(headText())
+.add(heroAnimation())
 .add(studioAnimation())
 ;
