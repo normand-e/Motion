@@ -56,6 +56,21 @@ function albumImagesAnim(){
     return tl;
 }
 
+function albumText(){
+    let tl = gsap.timeline();
+    let text = document.querySelector("#albName1, #albName2, #albName3, #albName4, #albName5, #albName6, #albName7, #albName8, #albName9, #albName10");
+    let animation = gsap.to("#albName1, #albName2, #albName3, #albName4, #albName5, #albName6, #albName7, #albName8, #albName9, #albName10", {
+        transformOrigin: "0% 100%",
+        paused: true,
+        scale:1.25,
+        stagger:0.05
+      });
+      
+      text.addEventListener("mouseenter", () => animation.play());
+      text.addEventListener("mouseleave", () => animation.reverse());
+
+    return tl;
+}
 
 
 let mainTl = gsap.timeline();
@@ -63,4 +78,5 @@ mainTl.add(headText())
 .add(heroAnimation())
 .add(studioAnimation())
 .add(albumImagesAnim())
+.add(albumText())
 ;
