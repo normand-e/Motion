@@ -16,7 +16,7 @@ function heroAnimation(){
             trigger:"#section-1",
             start:"bottom bottom",
             scrub:true,
-            markers:true,
+            markers:false,
             toggleActions: "play none none none"
         }});
     
@@ -41,10 +41,26 @@ function studioAnimation(){
     return tl;
 }
 
+function albumImagesAnim(){
+    let tl = gsap.timeline({
+        scrollTrigger:{
+            trigger:".albImg",
+            start:"top 100%",
+            end:"bottom bottom",
+            scrub:true,
+            markers:true,
+            toggleActions: "play pause resume reset"
+        }});
+    tl.from(".albImg", {scale:.5});
+
+    return tl;
+}
+
 
 
 let mainTl = gsap.timeline();
 mainTl.add(headText())
 .add(heroAnimation())
 .add(studioAnimation())
+.add(albumImagesAnim())
 ;
