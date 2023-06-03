@@ -9,14 +9,6 @@
   ],
   "creatorBuild" : "34484",
   "files" : {
-    "\/.gitattributes" : {
-      "cB" : 0,
-      "ft" : 8192,
-      "hM" : 0,
-      "oA" : 0,
-      "oAP" : "\/.gitattributes",
-      "oF" : 0
-    },
     "\/deploy\/css\/styles.css" : {
       "aP" : 1,
       "bl" : 0,
@@ -349,7 +341,7 @@
   },
   "projectAttributes" : {
     "creationDate" : 649104598.99548197,
-    "displayValue" : "Motion-S23-Ethan",
+    "displayValue" : "Motion",
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
