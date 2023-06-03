@@ -40,21 +40,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/tekni-logo-update.svg" : {
+    "\/design\/assets.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/tekni-logo-update.svg",
-      "oF" : 0,
-      "opt" : 0,
-      "plM" : 52780316221407,
-      "prP" : 0
-    },
-    "\/design\/tekni-logo.svg" : {
-      "ft" : 2097152,
-      "miP" : 0,
-      "oA" : 2,
-      "oAP" : "\/design\/tekni-logo.svg",
+      "oAP" : "\/design\/assets.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
