@@ -40,11 +40,11 @@
       "sC" : 3,
       "tS" : 0
     },
-    "\/design\/assets.svg" : {
+    "\/design\/esp-assets.svg" : {
       "ft" : 2097152,
       "miP" : 0,
       "oA" : 2,
-      "oAP" : "\/design\/assets.svg",
+      "oAP" : "\/design\/esp-assets.svg",
       "oF" : 0,
       "opt" : 0,
       "plM" : 52780316221407,
@@ -335,7 +335,7 @@
     "displayValueWasSetByUser" : 0,
     "iconImageName" : "brackets-glace",
     "iconImageWasSetByUser" : 0,
-    "lastBuiltDate" : 704325901.50510299
+    "lastBuiltDate" : 707532513.55041504
   },
   "projectSettings" : {
     "abortBuildOnError" : 1,
