@@ -6,12 +6,13 @@ import { MorphSVGPlugin } from "gsap/MorphSVGPlugin";
 gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 //MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
-const mainTL = gsap.timeline({id:"mainTL"});
+const tl = gsap.timeline({id:"mainTL"});
 
-mainTL.set("#bkgd", {alpha:0})
+tl.set("#bkgd", {alpha:0})
+tl.from("#black", {duration:1, scale:20}, "one")
 
 
 ;
 
 
-GSDevTools.create({animation: mainTL});
+GSDevTools.create({animation: tl});
