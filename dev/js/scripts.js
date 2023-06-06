@@ -11,10 +11,11 @@ const tl = gsap.timeline({id:"mainTL"});
 //setting up
 tl.set("#bkgd", {alpha:0})
 tl.set("#asterisk", {alpha:0})
-tl.set("#mark", {alpha:0, transformOrigin:"center center", scale:.8, x:"-=15", y:"-=70"})
-//tl.set("#EASTERN", {alpha:0})
-//tl.set("#STATE", {alpha:0})
-//tl.set("#PEN", {alpha:0})
+tl.set("#mark", {alpha:0, transformOrigin:"center center", scale:.6, x:"-=15", y:"-=70"})
+tl.set("#justMark", {alpha:.5, transformOrigin:"center center", x:245, y:90, scale:1.1}) //x:245, y:90 end position
+tl.set("#EASTERN", {alpha:0})
+tl.set("#STATE", {alpha:0})
+tl.set("#PEN", {alpha:0})
 tl.set("#rightBar", {transformOrigin:"center 100%", y:"+=765"})
 tl.set("#leftBar", {transformOrigin:"center 100%", y:"+=765"})
 tl.set("#centerBar", {transformOrigin:"center 100%", y:"-=765"})
@@ -40,15 +41,19 @@ tl.to("#leftBar", {duration:1.5, transformOrigin:"center center", rotate:585, sc
 tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:450, scale:.2, ease:"back.out:(1.7)", x:"+=10", y:"-=135"}, "second")
 
 
-tl.to("#EASTERN", {duration:1, ease:"back.out:(1.7)", x:"-=580"}, "third")
-tl.to("#STATE", {duration:1, ease:"back.out:(1.7)", x:"-=580"}, "third")
-tl.to("#PEN", {duration:1, ease:"back.out:(1.7)", x:"-=580"}, "third")
-tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:325, x:"-=15", y:"-=15"}, "forth")
-tl.to("#centerBar", {duration:1, ease:"back.out:(1.7)", rotate:360, x:"-=15", y:"-=15"}, "forth")
-tl.to("#leftBar", {duration:1, ease:"back.out:(1.7)", rotate:405, x:"-=15", y:"-=15"}, "forth")
-tl.to("#horizontalBar", {duration:1, ease:"back.out:(1.7)", rotate:90, x:"-=15", y:"-=15"}, "forth")
+//words come in while bars rotate
+tl.to(".words", {duration:.5, stagger:.15, ease:"back.out:(1.7)", x:"-=580", alpha:1}, "third")
+tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:325, x:"-=15", y:"-=15"}, "third+=.25")
+tl.to("#centerBar", {duration:1, ease:"back.out:(1.7)", rotate:360, x:"-=15", y:"-=15"}, "third+=.25")
+tl.to("#leftBar", {duration:1, ease:"back.out:(1.7)", rotate:405, x:"-=15", y:"-=15"}, "third+=.25")
+tl.to("#horizontalBar", {duration:1, ease:"back.out:(1.7)", rotate:90, x:"-=15", y:"-=15"}, "third+=.25")
 
-tl.to("#mark", {duration:.25, scale:1, alpha:1, ease:"back.out:(1.7)"}, "fifth")
+tl.to("#rightBar", {duration: 1, morphSVG:"#justMark", transformOrigin:"center center"}, "forth")
+
+
+//mark eaes in bars leave
+tl.to("#mark", {duration:.1, alpha:1}, "fifth")
+tl.to("#mark", {duration:.35, scale:1, ease:"elastic.out(1,1)"}, "fifth")
 tl.to("#rightBar", {duration:.1, alpha:0}, "fifth")
 tl.to("#centerBar", {duration:.1, alpha:0}, "fifth")
 tl.to("#leftBar", {duration:.1, alpha:0}, "fifth")
@@ -57,7 +62,7 @@ tl.to("#horizontalBar", {duration:.1, alpha:0}, "fifth")
 
 
 
-//tl.to("#rightBar", {duration: 1, morphSVG:"#mark", scale:2, transformOrigin:"center center"}, "fifth")
+
 
 
 /* tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:-360}, "third-=.25")
