@@ -11,11 +11,11 @@ const tl = gsap.timeline({id:"mainTL"});
 //setting up
 tl.set("#bkgd", {alpha:0})
 tl.set("#asterisk", {alpha:0})
-tl.set("#mark", {alpha:0, transformOrigin:"center center", scale:.6, x:"-=15", y:"-=70"})
-tl.set("#justMark", {alpha:0, transformOrigin:"center center",  x:295, y:142, scale:1.1}) //x:245, y:90 end position
-tl.set("#EASTERN", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=85"})
-tl.set("#STATE", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=85"})
-tl.set("#PEN", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=85"})
+tl.set("#mark", {alpha:0, transformOrigin:"center center", scale:.6, x:"-=15", y:"-=20"})
+tl.set("#justMark", {alpha:0, transformOrigin:"center center",  x:295, y:192, scale:1.1}) //x:245, y:90 end position
+tl.set("#EASTERN", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=35"})
+tl.set("#STATE", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=35"})
+tl.set("#PEN", {alpha:0, transformOrigin:"0% center", x:"+=565", y:"-=35"})
 tl.set("#rightBar", {transformOrigin:"center 100%", y:"+=765"})
 tl.set("#leftBar", {transformOrigin:"center 100%", y:"+=765"})
 tl.set("#centerBar", {transformOrigin:"center 100%", y:"-=765"})
@@ -32,10 +32,10 @@ tl.to("#leftBar", {duration:1, ease: "power4.out", y:"-=880"}, "first+=.50")
 tl.to("#horizontalBar", {duration:1, ease: "power4.out", x:"+=700"}, "first+=.75")
 
 //rotating
-tl.to("#rightBar", {duration:1.5, transformOrigin:"center center", rotate:495,scale:0, ease:"back.out:(1.7)", x:"-=160"}, "second")//rotate:495,
-tl.to("#centerBar", {duration:1.5, transformOrigin:"center center",  rotate:540,scale:0, ease:"back.out:(1.7)"}, "second")//rotate:540,
-tl.to("#leftBar", {duration:1.5, transformOrigin:"center center", rotate:585, scale:0, ease:"back.out:(1.7)", x:"+=160"}, "second")//rotate:585,
-tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:450, scale:0, ease:"back.out:(1.7)", x:"+=10", y:"-=135"}, "second")
+tl.to("#rightBar", {duration:1.5, transformOrigin:"center center", rotate:495,scale:0, ease:"back.out:(1.7)", x:"-=160", y:"+=50"}, "second")//rotate:495,
+tl.to("#centerBar", {duration:1.5, transformOrigin:"center center",  rotate:540,scale:0, ease:"back.out:(1.7)", y:"+=50"}, "second")//rotate:540,
+tl.to("#leftBar", {duration:1.5, transformOrigin:"center center", rotate:585, scale:0, ease:"back.out:(1.7)", x:"+=160", y:"+=50"}, "second")//rotate:585,
+tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:450, scale:0, ease:"back.out:(1.7)", x:"+=10", y:"-=85"}, "second")
 //tl.set("#horizontalBar #leftBar #rightBar #centerBar", {duration:.01, alpha:0}, "third")//rotate:450,
 tl.fromTo("#justMark", {duration:1, alpha:1, rotate:45, scale:.05}, { scale:.75, rotate:"+=315"}, "third-=.15")
 
