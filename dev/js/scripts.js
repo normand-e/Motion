@@ -12,7 +12,7 @@ const tl = gsap.timeline({id:"mainTL"});
 tl.set("#bkgd", {alpha:0})
 tl.set("#asterisk", {alpha:0})
 tl.set("#mark", {alpha:0, transformOrigin:"center center", scale:.6, x:"-=15", y:"-=70"})
-tl.set("#justMark", {alpha:.5, transformOrigin:"center center", x:245, y:90, scale:1.1}) //x:245, y:90 end position
+tl.set("#justMark", {alpha:0, transformOrigin:"center center", x:245, y:90, scale:1.1}) //x:245, y:90 end position
 tl.set("#EASTERN", {alpha:0})
 tl.set("#STATE", {alpha:0})
 tl.set("#PEN", {alpha:0})
@@ -43,17 +43,17 @@ tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:4
 
 //words come in while bars rotate
 tl.to(".words", {duration:.5, stagger:.15, ease:"back.out:(1.7)", x:"-=580", alpha:1}, "third")
-tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:325, x:"-=15", y:"-=15"}, "third+=.25")
-tl.to("#centerBar", {duration:1, ease:"back.out:(1.7)", rotate:360, x:"-=15", y:"-=15"}, "third+=.25")
-tl.to("#leftBar", {duration:1, ease:"back.out:(1.7)", rotate:405, x:"-=15", y:"-=15"}, "third+=.25")
-tl.to("#horizontalBar", {duration:1, ease:"back.out:(1.7)", rotate:90, x:"-=15", y:"-=15"}, "third+=.25")
+tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:"+=720", x:"-=15", y:"-=15", alpha:0}, "third+=.45")
+tl.to("#centerBar", {duration:1, ease:"back.out:(1.7)", rotate:"+=720", x:"-=15", y:"-=15", alpha:0}, "third+=.45")
+tl.to("#leftBar", {duration:1, ease:"back.out:(1.7)", rotate:"+=720", x:"-=15", y:"-=15", alpha:0}, "third+=.45")
+tl.to("#horizontalBar", {duration:1, ease:"back.out:(1.7)", rotate:"+=720", x:"-=15", y:"-=15", alpha:0}, "third+=.45")
+//tl.to(".words", {duration: 1, morphSVG:"#justMark"}, "second+=.25")
 
-tl.to("#rightBar", {duration: 1, morphSVG:"#justMark", transformOrigin:"center center"}, "forth")
 
 
-//mark eaes in bars leave
-tl.to("#mark", {duration:.1, alpha:1}, "fifth")
-tl.to("#mark", {duration:.35, scale:1, ease:"elastic.out(1,1)"}, "fifth")
+//mark eases in bars leave
+tl.to("#mark", {duration:.1, alpha:1}, "fifth-=.2")
+tl.to("#mark", {duration:.35, scale:1, ease:"elastic.out(1,1)"}, "fifth-=.2")
 tl.to("#rightBar", {duration:.1, alpha:0}, "fifth")
 tl.to("#centerBar", {duration:.1, alpha:0}, "fifth")
 tl.to("#leftBar", {duration:.1, alpha:0}, "fifth")
@@ -63,7 +63,7 @@ tl.to("#horizontalBar", {duration:.1, alpha:0}, "fifth")
 
 
 
-
+//tl.to("#rightBar", {duration: 1, morphSVG:"#justMark", transformOrigin:"center center"}, "forth")
 
 /* tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:-360}, "third-=.25")
 tl.to("#centerBar", {duration:1, ease:"back.out:(1.7)", rotate:-360}, "third-=.25")
