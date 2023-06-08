@@ -24,6 +24,7 @@ mainTL.to("#apartment", {duration:1, scaleX: 0,transformOrigin: "100% center", e
 mainTL.to("#apts", {duration: 2, x:280, y:-120, scale:.25,  ease: "power1.out"}, "start")
 mainTL.to("#Union_2", {duration: 2.75, transformOrigin:"50% 100%", x:-210, scale:0,  ease: "power1.out"}, "start") //outer tree
 mainTL.to("#Union", {duration: 2.2, transformOrigin:"50% 100%", x:-210, scale:0,  ease: "power1.out"}, "start+=.85") //inner tree
+mainTL.to("#road", {duration:2, y:"-=150", x:"+=30", scale:.3}, "start")
 //mainTL.to("long-road", {duration:2, clipPath:"url(#myClip)"}, "start")
 //mainTL.to("#slide-right", {duration:2.5, x:-205, y:260, scale:.25, ease: "power1.out"}, "start")
 mainTL.to("#slide", {duration:2, skewX:60, x:"-=200", y:"+=210", scale:.25}, "start")
