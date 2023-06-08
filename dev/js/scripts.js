@@ -21,9 +21,9 @@ mainTL.to("#heart", {duration: 2, transformOrigin:"50% 100%", x:-165, y:-210, ea
 mainTL.to("#flower", {duration: 2.5,transformOrigin:"50% 50%", rotate:360, scale:.2, y:190,  ease: "power1.out"}, "start")
 mainTL.to("#mountains", {duration: 2.5, transformOrigin:"100% 50%", scale:.4, x:200,  ease: "power1.out"}, "start")
 mainTL.to("#apartment", {duration:1, scaleX: 0,transformOrigin: "100% center", ease: "sine.inOut", yoyo:true}, "start")
-mainTL.to("#apts", {duration: 2, x:280, y:-120, scale:.25,  ease: "power1.out"}, "start")
-mainTL.to("#Union_2", {duration: 2.75, transformOrigin:"50% 100%", x:-210, scale:0,  ease: "power1.out"}, "start") //outer tree
-mainTL.to("#Union", {duration: 2.2, transformOrigin:"50% 100%", x:-210, scale:0,  ease: "power1.out"}, "start+=.85") //inner tree
+mainTL.to("#apts", {duration: 2, x:280, y:-120, scale:.25, ease: "power1.out"}, "start")
+mainTL.to("#Union_2", {duration: 2.75, transformOrigin:"50% 100%", x:-210, y:"-=30", scale:0,  ease: "power1.out"}, "start") //outer tree
+mainTL.to("#Union", {duration: 2.2, transformOrigin:"50% 100%", x:-210, y:"-=30", scale:0,  ease: "power1.out"}, "start+=.85") //inner tree
 mainTL.to("#road", {duration:2, y:"-=150", x:"+=30", scale:.3}, "start")
 //mainTL.to("long-road", {duration:2, clipPath:"url(#myClip)"}, "start")
 //mainTL.to("#slide-right", {duration:2.5, x:-205, y:260, scale:.25, ease: "power1.out"}, "start")
