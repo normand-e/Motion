@@ -7,7 +7,7 @@ gsap.registerPlugin(DrawSVGPlugin, GSDevTools, MorphSVGPlugin);
 //MorphSVGPlugin.convertToPath("circle, rect, ellipse, line, polygon, polyline");
 
 const mainTL = gsap.timeline({id:"mainTL"});
-
+//GOING TO CHANGE
 
 mainTL.set("#trulia-text", {x:-25, y:-300, autoAlpha:0})
 mainTL.set("#apartment-dark", {y:-285, x:2})
