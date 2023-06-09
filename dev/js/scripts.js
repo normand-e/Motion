@@ -32,19 +32,21 @@ tl.to("#leftBar", {duration:1, ease: "power4.out", y:"-=880"}, "first+=.50")
 tl.to("#horizontalBar", {duration:1, ease: "power4.out", x:"+=700"}, "first+=.75")
 
 //rotating
-tl.to("#rightBar", {duration:1.5, transformOrigin:"center center", rotate:495,scale:0, ease:"back.out:(1.7)", x:"-=160", y:"+=50"}, "second")//rotate:495,
-tl.to("#centerBar", {duration:1.5, transformOrigin:"center center",  rotate:540,scale:0, ease:"back.out:(1.7)", y:"+=50"}, "second")//rotate:540,
-tl.to("#leftBar", {duration:1.5, transformOrigin:"center center", rotate:585, scale:0, ease:"back.out:(1.7)", x:"+=160", y:"+=50"}, "second")//rotate:585,
-tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:450, scale:0, ease:"back.out:(1.7)", x:"+=10", y:"-=85"}, "second")
+tl.to("#rightBar", {duration:1.5, transformOrigin:"center center", rotate:495,scale:.1, ease:"back.out:(1.7)", x:"-=160", y:"+=50"}, "second")//rotate:495,
+tl.to("#centerBar", {duration:1.5, transformOrigin:"center center",  rotate:540,scale:.1, ease:"back.out:(1.7)", y:"+=50"}, "second")//rotate:540,
+tl.to("#leftBar", {duration:1.5, transformOrigin:"center center", rotate:585, scale:.1, ease:"back.out:(1.7)", x:"+=160", y:"+=50"}, "second")//rotate:585,
+tl.to("#horizontalBar", {duration:1.5, transformOrigin:"center center", rotate:450, scale:.1, ease:"back.out:(1.7)", x:"+=10", y:"-=85"}, "second")
+
 //tl.set("#horizontalBar #leftBar #rightBar #centerBar", {duration:.01, alpha:0}, "third")//rotate:450,
-tl.fromTo("#justMark", {duration:1, alpha:1, rotate:45, scale:.05}, { scale:.75, rotate:"+=315"}, "third-=.15")
+tl.to("#Bars", {duration:.1, alpha:0}, "third")
+tl.fromTo("#justMark", {duration:1, alpha:1, rotate:45, scale:.05}, { scale:.75, rotate:"+=315"}, "third-=.5")
 
 
 //words come in while bars rotate
-tl.to(".words", {duration:.5, stagger:.15, ease:"back.out:(3)", x:"-=620", alpha:1}, "third")
-tl.to("#justMark", {duration:1, ease:"back.out:(1.7)", rotate:"-=360", x:"-=30", y:"-=30", alpha:0}, "third+=.45")
-tl.to(".words", {duration:.25, stagger:.15, ease:"back.out:(3)", x:"+=30"}, "forth")
-tl.fromTo("#mark", {duration:.5, alpha:1, scale:.75}, {alpha:1, scale:1, ease:"back.out(3)"}, "forth")
+tl.to(".words", {duration:.75, stagger:.15, ease:"back.out:(3)", x:"-=620", alpha:1}, "third-=.15")
+tl.to("#justMark", {duration:.4, ease:"back.out:(1.7)", rotate:"-=360", x:"-=30", y:"-=30", alpha:0}, "third+=.45")
+tl.to(".words", {duration:.25, stagger:.15, ease:"back.out:(3)", x:"+=30"}, "forth-=.1")
+tl.fromTo("#mark", {duration:.5, alpha:1, scale:.75}, {alpha:1, scale:1, ease:"back.out(3)"}, "forth-=.1")
 
 // --------OLD------------ //
 /* tl.to("#rightBar", {duration:1, ease:"back.out:(1.7)", rotate:"+=720", x:"-=15", y:"-=15", alpha:0}, "third+=.45")
